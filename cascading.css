@@ -1,0 +1,247 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: white;
+    background: url(image/img1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* transition: background 1s ease; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.background2 {
+    background: url(image/img2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background 1s ease;
+}
+  
+.background3 {
+    background: url(image/img3.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background 1s ease;
+}
+.background4 {
+    background: url(image/img4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background 1s ease;
+}
+  
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background-color: rgb(107, 90, 151); */
+
+}
+.content{
+    width: 70%;
+    height: 80vh;
+    display: flex;
+    background-color: rgba(106, 116, 116, 0.288);
+    border-radius: 5px;
+    backdrop-filter: blur(3px);
+}
+.left{
+    flex: 60;
+    flex-shrink: 50;
+    /* background-color: red; */
+    height: 100%;
+    position: relative;
+}
+
+.logo{
+
+    /* background-color: orangered; */
+    height: 13vh;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+}
+.logo p{
+    margin: 0;
+}
+.down{
+    /* background-color: yellow; */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.box_container{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    /* background-color: aquamarine; */
+    
+    padding-left: 40px;
+    
+}
+.box1 p {
+    font-size: 5rem;
+    margin: 0;
+}
+.box2 p{
+    margin: 0;
+}
+.celcius{
+    height: 10vh;
+    /* background-color: olivedrab; */
+    display: flex;
+    justify-content: end;
+    padding-right: 20px;   
+}
+#farenheit{
+    cursor: pointer;
+}
+#celsius{
+    cursor: pointer;
+}
+
+
+.right{
+    flex: 40;
+    flex-shrink: 50;
+    /* background-color: blue; */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.right_content{
+    /* background-color: yellow; */
+    height: 90%;
+    width: 70%;
+}
+.search_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    outline-color: beige;
+    background-color: rgb(229, 229, 231);
+
+}
+#search{
+    width: 90%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.title_one{
+    font-size: 1.5rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.weather_details{
+    font-size: 1.2rem;
+}
+.template1{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.template2{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.template3{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.template4{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.template5{
+    display: flex;
+    justify-content: space-between;
+}
+
+#temperatureChart{
+    
+    
+
+}
+
+@media screen and (max-width: 1265px){
+    .content{
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 1115px){
+    .left{
+        flex: 50;
+    }
+    .right{
+        flex: 50;
+    }
+    .box1 p{
+        font-size: 4rem;
+    }
+    .box2 p{
+        font-size: 0.8rem;
+    }
+    .celcius{
+        padding-top: 10px;
+        
+    }
+
+}
+
+@media screen and (max-width: 921px){
+    .content{
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width: 793px){
+    .title_one{
+        font-size: 1.2rem;
+    }
+    .weather_details{
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 680px){
+    .box_container{
+        flex-direction: column;
+        padding-left    : 40px;
+        margin: 0;
+        align-items: start;
+    }
+    .box1 p{
+        font-size: 3rem;
+    }
+    .box2{
+        margin-top: -10px;
+    }
+    .celcius{
+        justify-content: start;
+        padding-left    : 40px;
+        
+    }
+    .left{
+        flex: 40;
+    }
+    .right{
+        flex: 60;
+    }
+
+}

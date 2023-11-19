@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="cascading.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="body">
+
+    <div class="container">
+        <div class="content">
+            <div class="left">
+                <div class="left_container">
+                    <div class="logo">
+                        <p>Greg.Bot</p>
+                    </div>
+                    <div class="down">
+                        <div class="box_container">
+                            <div class="box1">
+                                <p id="box1">00</p>
+                            </div>
+                            <div class="box2">
+                                <p id="location">Sunderland</p>
+                                <p id="time">00:00</p>
+                                <p id="condition">Rainy</p>
+                            </div>
+    
+                        </div>
+                        <div class="celcius">
+                            <span id="celsius">Celcius |</span><span id="farenheit">Fahrenheit</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- RIGHT CONTENT -->
+            
+            <div class="right">
+                <div class="right_content">
+                    <div class="search_container">
+                        <input type="search" id="search" placeholder="Location">
+                    </div>
+
+                    <!-- WEATHER -->
+
+                    <!-- HEAD -->
+                    <h3 class="title_one">Weather Details</h3>
+
+                    <!-- DETAILS -->
+                    <div class="weather_details">
+
+                        <!-- FIRST -->
+                        <div class="template1">
+                            <div class="name1">Temperature</div>
+                            <div id="template1"></div>
+                        </div>
+
+                        <!-- SECOND -->
+                        <div class="template2">
+                            <div class="name2">Cloud</div>
+                            <div id="template2"></div>
+                        </div>
+
+                        <!-- THIRD -->
+                        <div class="template3">
+                            <div class="name3">Region</div>
+                            <div id="template3"></div>
+                        </div>
+
+                        <!-- FOURTH -->
+                        <div class="template4">
+                            <div class="name4">Humidity</div>
+                            <div id="template4"></div>
+                        </div>
+
+                        <!-- FIFTH -->
+                        <div class="template5">
+                            <div class="name5">Wind-Degree</div>
+                            <div id="template5"></div>
+                        </div>
+                    </div>
+                    <!-- END OF WEATHER DETAILS -->
+                    
+                    <!-- THE DIVIDER -->
+                    <hr>
+
+                    <!-- TEMPERATURE CHART -->
+                    <canvas id="temperatureChart"></canvas>
+
+                    
+
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="jsFile.js"></script>
+    
+</body>
+</html>
