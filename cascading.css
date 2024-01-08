@@ -245,3 +245,29 @@ body{
     }
 
 }
+
+@media screen and (max-width: 600px) {
+    .content{
+        height: 75%;
+    }
+    .search_container{
+        width: 90%;
+    }
+    .celcius{
+        display: none;
+    }
+    .down{
+        margin-bottom: 15%;
+    }
+    .title_one{
+        font-size: 14px;
+    }
+    .weather_details{
+        font-size: 12px;
+    }
+    #temperatureChart{
+        display: none;
+    }
+  
+  }
+  
