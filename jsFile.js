@@ -90,7 +90,7 @@ searchInput.addEventListener('keyup', function(e) {
   if (e.key === 'Enter') {
     var userInput = searchInput.value;
     var locate = userInput;
-    let url = 'http://api.weatherapi.com/v1/current.json?q=' + locate + '&key=e163c9a6346f4544a7481212232610';
+    let url = 'https://api.weatherapi.com/v1/current.json?q=' + locate + '&key=e163c9a6346f4544a7481212232610';
   
     // FETCHING DATA USING USER'S SEACRH INPUT
 
@@ -167,7 +167,7 @@ function fetchHistoricalData(hourAgo) {
         const longitude = position.coords.longitude;
         const lat = latitude + ',' + longitude;
 
-        const apiUrl = 'http://api.weatherapi.com/v1/current.json?q=' + lat + '&key=e163c9a6346f4544a7481212232610';
+        const apiUrl = 'https://api.weatherapi.com/v1/current.json?q=' + lat + '&key=e163c9a6346f4544a7481212232610';
 
         fetch(apiUrl)
             .then(response => response.json())
